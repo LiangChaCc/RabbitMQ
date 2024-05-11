@@ -37,9 +37,9 @@ public class SendTest {
      */
     @Test
     void sendToDirect(){
-        String exchangeName = "cbc.exchanges";
+        String exchangeName = "cbc.exchange1";
         rabbitTemplate.convertAndSend(exchangeName,"red","hongse");
-        rabbitTemplate.convertAndSend(exchangeName,"blue","lanse");
+        rabbitTemplate.convertAndSend(exchangeName,"yellow","lanse");
         rabbitTemplate.convertAndSend(exchangeName,"red","hong");
 
     }
