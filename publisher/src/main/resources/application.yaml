@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 192.168.88.130
+    port: 5672
+    virtual-host: /cbcRabbit
+    username: cbc
+    password: 123
+    listener:
+      simple:
+        prefetch: 1   #每次只接受一条消息，只有在这条消息处理完才接受下一条
